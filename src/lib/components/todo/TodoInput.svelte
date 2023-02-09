@@ -36,6 +36,6 @@
 		class="bg-alice-blue hover:bg-picton-blue hover:text-alice-blue focus-visible:outline-indigo-dye text-indigo-dye group ml-4 flex items-center justify-center rounded-md focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2"
 	>
 		<span class="sr-only">Delete todo</span>
-		<i class="fa-solid fa-trash pl-4 pr-4 pt-2 pb-2 text-lg" />
+		<i class="fa-solid fa-trash p-2 text-lg" />
 	</button>
 </div>
