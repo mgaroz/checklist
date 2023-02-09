@@ -13,7 +13,7 @@
 </script>
 
 <section class="mt-10">
-	<h3 class="text-xl font-bold text-slate-800">Progress</h3>
+	<h3 class="text-xl font-bold text-indigo-dye">Progress</h3>
 	<div class="mt-8 space-y-8">
 		<ProgressBar title="In Progress" percentage={progressPercentage} />
 		<ProgressBar title="Completed" percentage={completePercentage} />

@@ -2,7 +2,7 @@
 	export let title;
 	export let percentage;
 
-	$: completeClass = title === 'Completed' ? 'bg-slate-700' : 'bg-slate-400';
+	$: completeClass = title === 'Completed' ? 'bg-indigo-dye' : 'bg-moonstone';
 </script>
 
 <div>
@@ -10,7 +10,7 @@
 		<p>{title}</p>
 		<p>{percentage}%</p>
 	</div>
-	<div class="mt-5 h-4 w-full overflow-hidden rounded-full bg-slate-300">
+	<div class="mt-5 h-4 w-full overflow-hidden rounded-full bg-mint-green">
 		<div
 			class="{completeClass} h-4 rounded-full transition-all duration-500 ease-out"
 			style="width: {percentage}%"
