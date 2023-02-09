@@ -13,7 +13,7 @@
 			checked={todo.complete}
 			id={`${todo.id}-checkbox`}
 			on:change={() => toggleComplete(todo.id)}
-			class="h-4 w-4 rounded border-slate-500 bg-slate-200 text-slate-800 focus:border-slate-400 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800"
+			class="h-4 w-4 rounded border-slate-500 bg-slate-200 text-slate-800 focus:border-slate-400 focus:outline focus:outline-1 focus:outline-offset-2 focus:outline-slate-600"
 		/>
 		<label for={`${todo.id}-text`} class="sr-only">Edit todo</label>
 		<input
@@ -24,9 +24,7 @@
 			on:input={(e) => editTodo(todo.id, e.target.value)}
 			class="ml-5 flex-1 text-ellipsis rounded-none border-x-0 border-t-0 border-b border-dashed border-b-slate-500 bg-slate-200 px-0 pb-1 text-base font-normal text-slate-700 placeholder:text-slate-400 focus:border-slate-800 focus:outline-none focus:ring-0 font-[Inter]"
 		/>
-		<span
-			class="{completeClass} ml-5 hidden rounded-full py-0.5 px-2 text-sm font-normal text-slate-800 md:block"
-		>
+		<span class="{completeClass} ml-5 hidden rounded-full py-0.5 px-2 text-sm font-normal md:block">
 			{todo.complete ? 'Complete' : 'In progress'}
 		</span>
 	</div>
